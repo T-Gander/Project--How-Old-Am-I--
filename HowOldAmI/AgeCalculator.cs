@@ -22,7 +22,7 @@ namespace HowOldAmI
 
             TimeSpan difference = today.Subtract(selecteddate);
 
-            FinalAge = $"{difference.Days / 365} Years, {difference.Hours} Hours, {difference.Minutes} Minutes, {difference.Seconds} Seconds.";
+            FinalAge = $"{difference.Days / 365} Years, {difference.Days - ((difference.Days /365)*365)} Days, {difference.Hours} Hours, {difference.Minutes} Minutes, {difference.Seconds} Seconds.";
         }
     }
 }
